@@ -1,0 +1,27 @@
+decoration {
+	background: inherit;
+	border: 1px solid @border_color;
+	box-shadow: 0px 0px 7px @shadow_color;
+	margin: 11px;
+}
+decoration:backdrop {
+	box-shadow: 0px 0px 7px @shadow_backdrop_color;
+}
+
+decoration, .csd{
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.csd.popup, .csd.popup > decoration {
+	border-radius: 7px;
+}
+
+dialog decoration, messagedialog decoration {
+	background: inherit;
+	border: 1px solid @border_color;
+	box-shadow: 0px 0px 7px @shadow_color;
+}

@@ -1,0 +1,32 @@
+headerbar.titlebar, headerbar {
+    background: @headerbar_color;
+    padding: 7px;
+	border-bottom: 1px solid @border_color;
+    box-shadow: inset 0px 1px 0px mix(@theme_bg_color, #FFF, 0.08);
+}
+headerbar {
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+.maximized headerbar {
+    border-radius: 0px;
+}
+
+dialog headerbar.titlebar {
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/* HEADER BAR FONTS */
+.title {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.subtitle {
+    opacity: 0.6;
+    font-size: smaller;
+    padding-left: 12px;
+    padding-right: 12px;
+}

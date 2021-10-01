@@ -1,0 +1,54 @@
+menu {
+	margin-top: 7px;
+	padding: 3px;
+}
+
+menuitem {
+	color: @theme_text_color;
+}
+menu > menuitem {
+	color: @theme_text_color;
+	padding: 3px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border-radius: 7px;
+}
+menubar > menuitem {
+	border-radius: 0px;
+	padding: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+menuitem:hover > label > accelerator {
+	color:inherit;
+}
+menuitem accelerator {
+	color: mix( @theme_text_color, @border_color, 0.5);
+}
+
+
+menuitem:hover {
+	background: @primary_color;
+	color: @text_white;
+}
+menuitem:hover label {
+	color:inherit;
+}
+
+menubar {
+	background: @button_color;
+	box-shadow: inset 0 -1px @border_color;
+}
+
+/* TOOLBAR */
+toolbar {
+	padding: 7px;
+	background: @headerbar_color;
+}
+
+overlay > toolbar {
+	border-radius: 7px;
+	background: rgba(250, 250, 250, 0.8);
+	border: 1px solid @border_color;
+}

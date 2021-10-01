@@ -1,0 +1,44 @@
+combobox window, combobox menu, combobox decoration {
+    border-radius: 7px;
+    color: @theme_text_color;
+    box-shadow: none;
+    padding: 2px;
+}
+combobox menuitem{
+    padding: 2px;
+    border-radius: 7px;
+}
+combobox menuitem:hover {
+    background: @primary_color;
+    color: @text_white;
+}
+combobox menuitem:active {
+    background: @primary_color;
+    color: @text_white;
+}
+
+/* LINKED COMBOBOX */
+.linked.horizontal combobox button.combo {
+    border-radius: 0px;
+    margin-left:-1px;
+}
+.linked.horizontal combobox:first-child button.combo {
+	border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.linked.horizontal combobox:last-child button.combo {
+	border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.linked.vertical combobox button.combo {
+    border-radius: 0px;
+    margin-top:-1px;
+}
+.linked.vertical combobox:first-child button.combo {
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.linked.vertical combobox:last-child button.combo {
+	border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}

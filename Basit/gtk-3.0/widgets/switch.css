@@ -1,0 +1,27 @@
+switch {
+	background: @button_click;
+
+	border: 1px solid @border_color;
+	border-radius: 16px;
+}
+
+switch:disabled {
+	background: mix(@button_click_top, @border_bold_color, 0.1);
+}
+switch:disabled > slider {
+	background: @button_color;
+}
+switch:disabled image, switch:backdrop image {
+	color: #999999;
+}
+
+switch > slider {
+	border-radius: 16px;
+	margin: 0px;
+}
+
+switch:checked {
+	background: #51D96C;
+	border-color: #31B95A;
+	color:white;
+}

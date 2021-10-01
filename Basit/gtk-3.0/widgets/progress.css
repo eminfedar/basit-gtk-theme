@@ -1,0 +1,10 @@
+progressbar trough {
+	background: @button_click;
+	border: 1px solid @border_color;
+	border-radius: 7px;
+}
+
+progressbar trough > progress {
+	background: @primary_color;
+	border-radius:7px;
+}

@@ -1,0 +1,18 @@
+treeview > *:selected {
+	background: @primary_color;
+	color: @text_white;
+}
+
+treeview {
+	background: @entry_background;
+	color: @theme_text_color;
+}
+
+/* TREE VIEW HEADER */
+header > button {
+	border-radius: 0;
+	border:0;
+	
+	background: @headerbar_color;
+	border-bottom: 1px solid @border_color;
+}

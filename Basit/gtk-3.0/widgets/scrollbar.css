@@ -1,0 +1,35 @@
+scrollbar {
+	background: rgba(0,0,0, 0.05);
+	border:none;
+	border-radius:0;
+	margin:0;
+}
+
+
+scrollbar slider {
+	min-width: 3px;
+	min-height: 7px;
+	border-radius: 5px;
+	border:none;
+	margin: 1px;
+	background: @primary_color;
+}
+scrollbar.vertical slider {
+	min-height: 16px;
+}
+
+scrollbar:hover slider{
+	min-width: 9px;
+	min-height: 16px;
+	background: @primary_color;
+}
+scrollbar slider:active {
+	background: @primary_color;
+}
+
+scrollbar button {
+	padding:0;
+	margin:0;
+	border:none;
+	background: transparent;
+}

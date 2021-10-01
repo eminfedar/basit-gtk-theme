@@ -1,0 +1,84 @@
+spinbutton {
+	color: @theme_fg_color;
+	border: 1px solid @border_color;
+	border-radius: 7px;
+}
+spinbutton > button, spinbutton > button:active, spinbutton > button:checked {
+	border: none;
+}
+spinbutton.horizontal > entry {
+	border:none;
+	border-radius: 7px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right: 1px solid @border_color;
+}
+
+spinbutton.vertical > entry {
+	border:none;
+	border-radius: 0px;
+}
+
+
+spinbutton.horizontal .up{
+	border-radius: 7px;
+	border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 5px;
+}
+spinbutton.horizontal .down{
+	border-radius: 0px;
+	padding: 5px;
+}
+spinbutton.horizontal entry {
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+spinbutton.vertical .up{
+	border-radius: 7px;
+	border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+	border-bottom: 1px solid @border_color;
+	padding: 5px;
+}
+spinbutton.vertical .down{
+	border-radius: 7px;
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+	border-top: 1px solid @border_color;
+	padding: 5px;
+}
+spinbutton.vertical entry {
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.linked.vertical > spinbutton:first-child > button,
+.linked.vertical > spinbutton:first-child > entry,
+.linked.vertical > spinbutton:first-child{
+	border-radius: 0px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+.linked.vertical > spinbutton:last-child > button,
+.linked.vertical > spinbutton:last-child > entry,
+.linked.vertical > spinbutton:last-child{
+	border-radius: 0px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+.linked.horizontal > spinbutton:first-child > button,
+.linked.horizontal > spinbutton:first-child > entry,
+.linked.horizontal > spinbutton:first-child{
+	border-radius: 0px;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.linked.horizontal > spinbutton:last-child > button,
+.linked.horizontal > spinbutton:last-child > entry,
+.linked.horizontal > spinbutton:last-child{
+	border-radius: 0px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}

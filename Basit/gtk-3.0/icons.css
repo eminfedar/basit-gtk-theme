@@ -1,0 +1,6 @@
+arrow {
+	padding: 6px;
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+	min-width:1px;
+	min-height:1px;
+}

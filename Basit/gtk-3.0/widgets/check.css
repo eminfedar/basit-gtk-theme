@@ -1,0 +1,27 @@
+check {
+    min-width: 16px;
+    min-height: 16px;
+    margin: 3px;
+    -gtk-icon-source: url("../assets/checkbox-unchecked.svg");
+}
+
+check:indeterminate {
+	-gtk-icon-source: url("../assets/checkbox-indeterminate.svg");
+}
+
+check:disabled:indeterminate {
+	-gtk-icon-source: url("../assets/checkbox-indeterminate-disabled.svg");
+}
+
+check:disabled {
+    -gtk-icon-source: url("../assets/checkbox-disabled.svg");
+}
+
+check:checked {
+	-gtk-icon-source: url("../assets/checkbox-checked.svg");
+}
+
+check:disabled:checked {
+    -gtk-icon-source: url("../assets/checkbox-checked-disabled.svg");
+}
+

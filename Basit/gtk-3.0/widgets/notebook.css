@@ -1,0 +1,69 @@
+notebook {
+	background: @theme_bg_color;
+}
+
+tab {
+    padding: 7px;
+}
+header.top tab {
+    margin-bottom: 3px;
+}
+header.right tab {
+    margin-left: 3px;
+}
+header.bottom tab {
+    margin-top: 3px;
+}
+header.left tab {
+    margin-right: 3px;
+}
+
+tab:hover, tab:checked {
+	background: @headerbar_color;
+}
+header.top tab:hover {
+    border-bottom: 3px solid @border_color;
+    margin-bottom: 0px;
+}
+header.right tab:hover {
+    border-left: 3px solid @border_color;
+    margin-left: 0px;
+}
+header.bottom tab:hover {
+    border-top: 3px solid @border_color;
+    margin-top: 0px;
+}
+header.left tab:hover {
+    border-right: 3px solid @border_color;
+    margin-right: 0px;
+}
+
+header.top {
+    border-bottom: 1px solid @border_color;
+}
+header.right{
+    border-left: 1px solid @border_color;
+}
+header.bottom{
+    border-top: 1px solid @border_color;
+}
+header.left {
+    border-right: 1px solid @border_color;
+}
+
+header.top tab:checked {
+    border-bottom: 3px solid @primary_color;
+    margin-bottom: 0px;
+}
+header.right tab:checked {
+    border-left: 3px solid @primary_color;
+    margin-left: 0px;
+}
+header.bottom tab:checked {
+    border-top: 3px solid @primary_color;
+    margin-top: 0px;
+}
+header.left tab:checked {
+    border-right: 3px solid @primary_color;
+    margin-right: 0px;
+}

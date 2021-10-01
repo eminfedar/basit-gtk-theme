@@ -1,0 +1,10 @@
+window, .background{
+    background: @theme_bg_color;
+    color: @theme_text_color;
+}
+
+window.maximized, window.maximized decoration, .maximized, .maximized > *,
+.csd.maximized, .csd.maximized decoration {
+    border-radius: 0;
+    border: none;
+}

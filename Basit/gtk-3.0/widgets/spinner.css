@@ -1,0 +1,14 @@
+@keyframes spin {
+    to { -gtk-icon-transform: rotate(1turn); }
+}
+
+spinner{
+    opacity: 0;
+}
+spinner:checked {
+    opacity: 1;
+    animation: spin 1s linear infinite;
+}
+spinner:checked:disabled {
+    opacity: 0.5;
+}

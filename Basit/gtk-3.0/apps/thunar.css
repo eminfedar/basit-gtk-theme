@@ -1,0 +1,10 @@
+
+.thunar scrolledwindow {
+	background: @entry_background;
+}
+
+.thunar scrolledwindow widget.view:selected {
+	background: @primary_color;
+	color: @text_white;
+	border-radius: 7px;
+}

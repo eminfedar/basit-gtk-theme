@@ -1,0 +1,4 @@
+colorswatch {
+	border: 1px solid @border_color;
+	border-radius: 7px;
+}

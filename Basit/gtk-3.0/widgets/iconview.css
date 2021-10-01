@@ -1,0 +1,12 @@
+iconview {
+	border-radius: 7px;
+}
+
+iconview:hover {
+	background: @button_hover;
+}
+
+iconview:selected {
+	background: @primary_color;
+	color: @text_white;
+}

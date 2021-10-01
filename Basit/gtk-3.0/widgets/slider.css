@@ -1,0 +1,63 @@
+slider {
+	border-radius: 100%;
+	border: 1px solid @border_color;
+	
+	min-width: 16px;
+    min-height: 16px;
+    
+    margin: -5px;
+	
+	background: @button_color;
+	box-shadow: 0 0 2px @border_color;
+}
+slider:active {
+	background: @button_click;
+	border-color: @primary_color;
+}
+slider:disabled {
+	box-shadow: 0 0 0 @border_color;
+	background: @button_hover;
+}
+
+/* Scale */
+scale {
+    margin: 5px;
+}
+scale trough {
+	background: @button_click;
+	border: 1px solid @border_color;
+	border-radius: 7px;
+}
+scale highlight {
+	background: @primary_color;
+	border-radius: 7px;
+}
+scale:disabled highlight {
+	background: mix(@primary_color, #DDD, 0.5);
+}
+scale > value {
+	color: mix(transparent, @theme_text_color, 0.8);
+}
+scale.horizontal > value.left { margin-right: 5px; }
+scale.horizontal > value.right { margin-left: 5px; }
+scale.vertical > value.top { margin-bottom: 5px; }
+scale.vertical > value.bottom { margin-top: 5px; }
+
+
+
+/* Indicators & Marks */
+mark * {
+	color: mix(transparent, @theme_text_color, 0.7);
+}
+
+indicator {
+	color: @border_color;
+}
+scale.horizontal indicator {
+	min-width: 1px;
+	min-height: 6px;
+}
+scale.vertical indicator{
+	min-width: 6px;
+	min-height: 1px;
+}

@@ -1,0 +1,15 @@
+view, .view {
+    color: @theme_text_color;
+    background: @theme_base_color;
+}
+
+view:selected, .view:selected {
+    background: @primary_color;
+	color: @text_white;
+}
+
+
+rubberband, .rubberband {
+	border: 1px solid @primary_color;
+	background: alpha(@primary_color, 0.5);
+}

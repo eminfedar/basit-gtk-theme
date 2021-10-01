@@ -1,0 +1,97 @@
+@import url("gtk-colors-dark.css");
+
+* {
+    color: inherit;
+}
+
+*:disabled, *:backdrop {
+    color: mix (@theme_fg_color, @theme_bg_color, 0.3);
+}
+
+/* WINDOW */
+@import url("window/window.css");
+/* DECORATION */
+@import url("window/decoration.css");
+/* POPOVER */
+@import url("window/popover.css");
+/* DIALOGS */
+@import url("window/dialog.css");
+/* FRAME */
+@import url("window/frame.css");
+
+
+/* HEADERBAR */
+@import url("widgets/headerbar.css");
+/* STACKSWITCHER */
+@import url("widgets/stackswitcher.css");
+
+/* LABEL */
+@import url("widgets/label.css");
+/* BUTTON */
+@import url("widgets/button.css");
+/* COMBOBOX */
+@import url("widgets/combobox.css");
+/* SPINBUTTON */
+@import url("widgets/spinbutton.css");
+/* CHECKBOX */
+@import url("widgets/check.css");
+/* RADIO BUTTON */
+@import url("widgets/radio.css");
+
+/* SLIDER */
+@import url("widgets/slider.css");
+/* PROGRESS BAR */
+@import url("widgets/progress.css");
+/* LEVEL BAR */
+@import url("widgets/levelbar.css");
+/* SWITCH */
+@import url("widgets/switch.css");
+/* SCROLL BAR */
+@import url("widgets/scrollbar.css");
+
+/* ENTRY */
+@import url("widgets/entry.css");
+/* TEXTVIEW */
+@import url("widgets/textview.css");
+
+/* ROW */
+@import url("widgets/row.css");
+/* TREEVIEW */
+@import url("widgets/treeview.css");
+/* NOTEBOOK */
+@import url("widgets/notebook.css");
+/* CALENDAR */
+@import url("widgets/calendar.css");
+/* ICON VIEW */
+@import url("widgets/iconview.css");
+/* PANEL */
+@import url("widgets/panel.css");
+/* ACTIONBAR */
+@import url("widgets/actionbar.css");
+
+
+/* COLOR SELECTOR */
+@import url("widgets/colorswatch.css");
+/* SPINNER */
+@import url("widgets/spinner.css");
+/* TOOLTIP */
+@import url("widgets/tooltip.css");
+/* TOOLTIP */
+@import url("widgets/view.css");
+
+
+
+/* MENU & MENUITEM */
+@import url("widgets/menu.css");
+
+
+
+/* ICONS */
+@import url("icons.css");
+
+
+
+/* APPS */
+@import url("apps/nautilus.css");
+@import url("apps/thunar.css");
+@import url("apps/terminal.css");

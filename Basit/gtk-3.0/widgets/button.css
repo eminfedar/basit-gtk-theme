@@ -1,0 +1,201 @@
+button {
+    color: @theme_text_color;
+	background: @button_color;
+	border: 1px solid @border_color;
+	border-radius: 7px;
+    padding: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: all 170ms;
+}
+button:hover {
+    background: @button_hover;
+}
+button:active, button:checked{
+    background: @button_click;
+    border: 1px solid @border_bold_color;
+    box-shadow: inset 0px 4px 4px rgba(0,0,0,0.1);
+}
+button:disabled {
+    background: @button_hover;
+}
+
+button.link {
+    color: @link_color;
+    text-decoration-line: underline;
+}
+
+button label, button label:hover, button label:focus, button label:active, button label:backdrop {
+    background: none;
+    color: inherit;
+}
+button:backdrop {
+    color: mix(@theme_text_color, @button_color, 0.3);
+}
+
+
+/* FLAT BUTTON */
+.flat {
+    background: none;
+    border: 1px solid transparent;
+    color: @theme_text_color;
+}
+button.flat:hover{
+    background: rgba(0,0,0,0.15);
+}
+button.flat:checked {
+	background: @primary_color;
+	color: @text_white;
+}
+
+/* LINKED BUTTONS */
+.linked.horizontal > button {
+    border: 1px solid @border_color;
+    border-radius: 0;
+    margin-left: -1px;
+}
+.linked.horizontal > button:first-child {
+    margin-left:0px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.linked.horizontal > button:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.linked.vertical > button {
+    border: 1px solid @border_color;
+    border-radius: 0;
+    margin-top:-1px;
+}
+.linked.vertical > button:first-child {
+    margin-top:0px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.linked.vertical > button:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+/* SUGGESTED ACTION */
+button.suggested-action {
+    border-color: @primary_color;
+	background: @primary_color;
+    color: @text_white;
+}
+button.suggested-action * {
+    color: @text_white;
+}
+button.suggested-action:hover {
+	background: @primary_color;
+}
+button.suggested-action:active, button.suggested-action:checked {
+	background: @primary_color;
+}
+button.suggested-action:backdrop, button.suggested-action:disabled {
+    color: mix(@text_white, @button_suggested_bottom, 0.3);
+    background: @primary_color;
+}
+
+/* DESTRUCTIVE ACTION */
+button.destructive-action {
+    border-color: mix(@button_destructive, #000, 0.3);
+    background: @button_destructive;
+	color: white;
+}
+button.destructive-action:hover {
+    background: @button_destructive_hover;
+}
+button.destructive-action:active, button.destructive-action:checked {
+    background: @button_destructive_click;
+}
+button.destructive-action:backdrop, button.destructive-action:disabled {
+    background: @button_destructive_click;
+    color: mix(@text_white, @button_destructive_bottom, 0.3);
+}
+
+/* MODEL BUTTON (MENU BUTTONS) */
+modelbutton {
+	border-radius: 7px;
+	padding: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+modelbutton:hover {
+    background: @primary_color;
+    color: @text_white;
+}
+modelbutton:hover label {
+    color: inherit;
+}
+
+/* TOOL BUTTON */
+toolbutton button {
+	padding: 4px;
+	border-radius: 0;
+}
+toolbutton button:hover {
+	background: @toolbutton_hover;
+}
+toolbutton button:active {
+	background: @toolbutton_active;
+}
+
+
+
+/* TITLE BUTTON */
+button.titlebutton {
+	border-radius: 7px;
+    padding: 5px;
+    border:none;
+    background: transparent;
+    transition-duration: 0.2s;
+    color: @theme_text_color;
+}
+button.titlebutton > image {
+    color: inherit;
+}
+
+button.titlebutton.close {
+	color: #FF0000;
+}
+button.titlebutton.minimize {
+	color: #00BB00;
+}
+button.titlebutton.maximize {
+	color: #0099FF;
+}
+
+button.titlebutton.close:hover {
+	background: #FF0000;
+	color: white;
+}
+button.titlebutton.minimize:hover {
+    background: #00BB00;
+	color: white;
+}
+button.titlebutton.maximize:hover {
+    background: #00AAFF;
+	color: white;
+}
+
+
+
+/* PATH-BAR BUTTONS */
+.path-bar button{
+	border-radius:0px;
+	margin-left: -1px;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+.path-bar button:first-child{
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	margin-left: 0px;	
+}
+.path-bar button:last-child {
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;	
+}

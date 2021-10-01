@@ -1,0 +1,10 @@
+
+calendar {
+	border: 1px solid @border_color;
+}
+
+calendar:selected {
+	background: @primary_color;
+	color: @text_white;
+	border-radius: 7px;
+}

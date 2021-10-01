@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Basit
+Comment=Basit is a simple GTK Theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Basit
+IconTheme=Adwaita
+ButtonLayout=close,minimize,maximize:menu

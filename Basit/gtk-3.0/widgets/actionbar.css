@@ -1,0 +1,4 @@
+actionbar > revealer > box {
+    padding: 7px;
+    border-top: 1px solid @border_color;
+}

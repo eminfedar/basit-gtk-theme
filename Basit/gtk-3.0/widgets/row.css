@@ -1,0 +1,79 @@
+row {
+	margin: 0px;
+	padding: 3px;
+	padding-left: 7px;
+	padding-right: 7px;
+	
+	transition: all 200ms;
+}
+
+list {
+	background: @entry_background;
+}
+
+.activatable:hover {
+	background: @button_hover;
+	color: @theme_text_color;
+}
+row:selected{
+	background: @primary_color;
+	color: @text_white;
+}
+row:hover {
+	background: @button_hover;
+}
+/*
+row:active {
+	background: @primary_color;
+}
+*/
+row label {
+	color:inherit;
+}
+
+flowboxchild {
+	margin: 1px;
+}
+flowboxchild:selected {
+	background: @primary_color;
+	color: @text_white;
+	border: 1px solid @primary_color;
+	margin: 0px;
+}
+
+
+row:selected:hover  {
+	background: @primary_color;
+	color: @text_white;
+}
+row:selected:active  {
+	background: @primary_color;
+	color: @text_white;
+}
+row:backdrop {
+	color: @theme_text_color;
+}
+
+
+/* SIDEBAR */
+row.sidebar-row {
+	padding: 5px;
+	background: transparent;
+	color: @theme_text_color;
+}
+row.sidebar-row image.sidebar-icon {
+	padding-right: 5px;
+}
+row.sidebar-row:selected {
+	background: @primary_color;
+	color: @text_white;
+}
+row.sidebar-row:selected:hover {
+	background: @primary_color;
+}
+row.sidebar-row:selected:active {
+	background: @primary_color;
+}
+row.sidebar-row:backdrop:selected label.sidebar-label, row.sidebar-row:backdrop:selected image.sidebar-icon {
+	color: @text_white;
+}

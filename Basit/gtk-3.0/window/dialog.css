@@ -1,0 +1,7 @@
+dialog, messagedialog {
+	background: @theme_bg_color;
+}
+dialog headerbar {
+	padding-top:0;
+	padding-bottom:0;
+}
