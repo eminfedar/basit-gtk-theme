@@ -3,6 +3,7 @@ Basit("Simple" in Turkish) is a simple & clean GTK3 theme.
 
 - **Pure** GTK3 CSS
 - **Easily modifiable** code structure *(button.css, menu.css, entry.css etc...)*
+- **GNOME** support only
 - **Flat**
 
 ## Pictures
